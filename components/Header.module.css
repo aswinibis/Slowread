@@ -1,0 +1,72 @@
+.header {
+    background-color: var(--surface);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--secondary);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo a {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navList a {
+    font-weight: 500;
+    color: var(--text-main);
+    transition: color 0.2s;
+}
+
+.navList a:hover {
+    color: var(--primary);
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    min-width: 200px;
+    display: none;
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+.dropdown:hover .dropdownMenu {
+    display: block;
+}
+
+.dropdownMenu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.dropdownMenu li a:hover {
+    background-color: var(--background);
+}
